@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lootjes Trekker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+<!-- Container voor de lootjes trekker -->
+<div id="lootjes-app" class="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
+    <h1 class="text-2xl font-bold text-center mb-4">Lootjes Trekker</h1>
+
+    <div id="naam-form">
+        <label for="naam" class="block mb-2 text-lg">Vul je naam in</label>
+        <input type="text" id="naam" class="border border-gray-300 rounded p-2 w-full mb-4" placeholder="Naam">
+        <button onclick="gaVerder()" class="bg-blue-500 text-white p-2 rounded w-full">Ga Verder</button>
+    </div>
+
+    <div id="lootjes-container" class="hidden">
+        <h2 class="text-xl mb-4">Jouw Lootjes:</h2>
+        <ul id="lootjes-lijst" class="list-disc pl-4"></ul>
+    </div>
+</div>
+
+<script src="lootjes.js"></script>
+</body>
+</html>
